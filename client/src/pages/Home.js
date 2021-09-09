@@ -7,8 +7,8 @@ const Home = () => {
 
   return (
     <div className="container">
-      <CategoryMenu setCategory={setCategory} />
-      <ProductList currentCategory={currentCategory} />
+      <CategoryMenu setCategory={setCategory} /> {/*Passes the setCategory object to the CategoryMenu component}  */}
+      <ProductList currentCategory={currentCategory} /> {/*Passes the currentCategory object with it default value of null to ProductList component*/}
     </div>
   );
 };
